@@ -3,6 +3,7 @@ import logo from "@/app/assets/images/logo.png";
 import PhoneIcon from "@/app/assets/icons/phone.svg";
 import SearchIcon from "@/app/assets/icons/search.svg";
 import ChevronDownIcon from "@/app/assets/icons/chevron-down.svg";
+import HeaderDropdown from "./HeaderDropdown";
 
 const Header = () => {
   return (
@@ -19,12 +20,14 @@ const Header = () => {
           Backpacking Trips
         </div>
         <div className="hover:text-secondary cursor-pointer">Treks</div>
+        {/*         
         <div className="flex gap-1">
           <div className="hover:text-secondary cursor-pointer">More</div>
           <div className="size-6 hover:stroke-gray-300 cursor-pointer">
             <ChevronDownIcon />
           </div>
-        </div>
+        </div> */}
+        <HeaderDropdown />
       </div>
 
       <div className="flex gap-4">
