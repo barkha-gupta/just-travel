@@ -24,3 +24,23 @@ body {
     text-wrap: balance;
   }
 }
+
+.link-with-hover-line {
+  position: relative;
+  display: inline-block;
+}
+
+.link-with-hover-line::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #88c444, #2db4e7);
+  transition: width 0.3s ease-in-out;
+}
+
+.link-with-hover-line:hover::after {
+  width: 100%;
+}

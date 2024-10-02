@@ -1,20 +1,48 @@
 import Image from "next/image";
 import logo from "@/app/assets/images/logo.png";
+import PhoneIcon from "@/app/assets/icons/phone.svg";
+import SearchIcon from "@/app/assets/icons/search.svg";
+import ChevronDownIcon from "@/app/assets/icons/chevron-down.svg";
 
 const Header = () => {
   return (
-    <div className="border border-red-600 p-5 flex justify-between items-center gap-2">
+    <div className="p-5 flex flex-wrap justify-between items-center gap-4 shadow-md">
       <Image src={logo} alt="company logo" className="w-40 h-9" priority />
 
-      <div></div>
-      <div>
+      <div className="w-6/12 flex justify-between items-center gap-8 font-medium">
         <div>
-          <button></button>
+          <p className="bg-gradient-to-r from-[#88c444] to-[#2db4e7] bg-clip-text text-transparent cursor-pointer font-semibold text-lg link-with-hover-line ">
+            Early Bird Discount
+          </p>
+        </div>
+        <div className="hover:text-secondary cursor-pointer">
+          Backpacking Trips
+        </div>
+        <div className="hover:text-secondary cursor-pointer">Treks</div>
+        <div className="flex gap-1">
+          <div className="hover:text-secondary cursor-pointer">More</div>
+          <div className="size-6 hover:stroke-gray-300 cursor-pointer">
+            <ChevronDownIcon />
+          </div>
+        </div>
+      </div>
+
+      <div className="flex gap-4">
+        <div className="flex gap-1">
+          <div className="size-9 border p-2 rounded-full bg-gray-100">
+            <PhoneIcon />
+          </div>
           <div className="text-primary text-sm">
             <p>Call Us</p>
             <p className="font-medium">+91 9669009880</p>
           </div>
         </div>
+        <div className="size-11 fill-btnPrimary">
+          <SearchIcon />
+        </div>
+        <button className="bg-btnPrimary text-white font-medium px-4 py-2 rounded-3xl">
+          Login
+        </button>
       </div>
     </div>
   );
