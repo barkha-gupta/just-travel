@@ -1,13 +1,12 @@
 import Image from "next/image";
-import logo from "@/app/assets/images/logo.png";
-import PhoneIcon from "@/app/assets/icons/phone.svg";
-import SearchIcon from "@/app/assets/icons/search.svg";
-import ChevronDownIcon from "@/app/assets/icons/chevron-down.svg";
+import logo from "@/public/assets/images/logo.png";
+import PhoneIcon from "@/public/assets/icons/phone.svg";
+import SearchIcon from "@/public/assets/icons/search.svg";
 import HeaderDropdown from "./HeaderDropdown";
 
 const Header = () => {
   return (
-    <div className="p-5 flex flex-wrap justify-between items-center gap-4 shadow-md">
+    <div className="p-5 flex justify-between items-center gap-4 shadow-md w-full">
       <Image src={logo} alt="company logo" className="w-40 h-9" priority />
 
       <div className="w-6/12 flex justify-between items-center gap-8 font-medium">
@@ -20,13 +19,6 @@ const Header = () => {
           Backpacking Trips
         </div>
         <div className="hover:text-secondary cursor-pointer">Treks</div>
-        {/*         
-        <div className="flex gap-1">
-          <div className="hover:text-secondary cursor-pointer">More</div>
-          <div className="size-6 hover:stroke-gray-300 cursor-pointer">
-            <ChevronDownIcon />
-          </div>
-        </div> */}
         <HeaderDropdown />
       </div>
 
@@ -40,7 +32,7 @@ const Header = () => {
             <p className="font-medium">+91 9669009880</p>
           </div>
         </div>
-        <div className="size-11 fill-btnPrimary">
+        <div className="size-11 fill-btnPrimary cursor-pointer">
           <SearchIcon />
         </div>
         <button className="bg-btnPrimary text-white font-medium px-4 py-2 rounded-3xl">

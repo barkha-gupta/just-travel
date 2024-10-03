@@ -15,6 +15,11 @@ const config: Config = {
         btnPrimary: "var(--btn-primary)",
         btnDisabled: "var(--btn-disabled)",
       },
+      backgroundImage: {
+        smallbannerImg: "url('/assets/images/home-background.jpg')",
+        bannerImg:
+          "linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url('/assets/images/home-background.jpg')",
+      },
     },
   },
   plugins: [],

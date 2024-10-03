@@ -1,4 +1,4 @@
-import ChevronDownIcon from "@/app/assets/icons/chevron-down.svg";
+import ChevronDownIcon from "@/public/assets/icons/chevron-down.svg";
 
 const DropdownList = [
   { title: "All Girls's Trips", link: "/all-girls-trips" },
