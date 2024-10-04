@@ -6,7 +6,7 @@ import HeaderDropdown from "./HeaderDropdown";
 
 const Header = () => {
   return (
-    <div className="p-5 flex justify-between items-center gap-4 shadow-md w-full">
+    <div className="w-full p-5 flex justify-between items-center gap-4 shadow-md">
       <Image src={logo} alt="company logo" className="w-40 h-9" priority />
 
       <div className="w-6/12 flex justify-between items-center gap-8 font-medium">

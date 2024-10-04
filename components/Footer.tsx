@@ -10,7 +10,7 @@ import { FaSquareTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="flex flex-col">
-      <div className="p-4 flex flex-col lg:flex-row lg:gap-4 gap-8 justify-between text-sm">
+      <div className="p-5 flex flex-col lg:flex-row lg:gap-4 gap-8 justify-between text-sm">
         <div className="flex flex-col items-center">
           <div className="w-52 h-10">
             <Image src={Logo} alt="company logo" />
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-row lg:flex-col gap-3">
           <div className="font-semibold">Company</div>
-          <div className="text-secondary flex flex-row lg:flex-col gap-2">
+          <div className="w-full text-sec flex flex-row lg:flex-col lg:gap-2 gap-4">
             <div>About Us</div>
             <div>Contact Us</div>
             <div>Our Blogs</div>
@@ -37,9 +37,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row lg:flex-col gap-3">
+        <div className="flex flex-row lg:flex-col gap-3 ">
           <div className="font-semibold">Trips</div>
-          <div className="text-secondary flex flex-row lg:flex-col gap-2">
+          <div className="w-full text-sec flex flex-row lg:flex-col lg:gap-2 gap-4">
             <div>Yatras</div>
             <div>Treks</div>
             <div>Weekend Gateways</div>
@@ -60,14 +60,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between">
-        <div className="border-t px-4 py-8 flex items-center gap-1">
-          <span className="fill-secondary">
+      <div className="flex flex-col lg:flex-row items-center justify-between border-t p-5 gap-2">
+        <div className="flex items-center gap-1">
+          <span className="fill-sec">
             <CopyrightIcon />
           </span>
           <span className="text-sm">2015-2024 JustWravel Pvt. Ltd.</span>
         </div>
-        <div className="text-sm text-secondary">
+        <div className="text-sm text-sec">
           <span>
             Privacy Policy <span className="text-black">|</span>{" "}
           </span>

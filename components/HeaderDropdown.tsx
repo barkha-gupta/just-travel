@@ -23,7 +23,7 @@ const HeaderDropdown = () => {
             item.title ? (
               <li
                 key={index}
-                className="p-2 text-center hover:text-secondary cursor-pointer rounded"
+                className="p-2 text-center hover:text-sec cursor-pointer rounded"
               >
                 {item.title}
               </li>

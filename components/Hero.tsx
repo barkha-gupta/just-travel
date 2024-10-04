@@ -4,6 +4,7 @@ import DestinationIcon from "@/public/assets/icons/destination.svg";
 import ExperienceIcon from "@/public/assets/icons/experience.svg";
 import SmallBannerImage from "@/public/assets/images/home-background.jpg";
 import Image from "next/image";
+import HeroCarousel from "./HeroCarousel";
 const footerList = [
   { icon: "reviews", text: "7095+", title: "Reviews" },
   {
@@ -44,25 +45,25 @@ const Hero = () => {
   return (
     <div className="w-full">
       <div
-        className={`bg-bannerImg bg-no-repeat bg-cover bg-center w-full h-[800px] p-5 flex flex-col justify-between`}
+        className={`bg-bannerImg bg-no-repeat bg-cover bg-center w-full h-auto p-5 flex flex-col justify-between `}
       >
-        <div className="grid grid-cols-2 gap-8 h-full">
-          <div className="py-4 text-white flex flex-col justify-between">
-            <div className="mt-16 font-bold text-5xl flex flex-col gap-5">
-              <p className="tracking-wide flex items-end">
-                <span>Book Your</span>
+        <div className="lg:grid lg:grid-cols-2 grid-cols-1 gap-4 h-full">
+          <div className="py-4 text-white flex flex-col justify-between gap-8">
+            <div className="mt-16 font-bold flex flex-col gap-5">
+              <p className="tracking-wide flex items-end gap-4">
+                <span className="text-4xl">Book Your</span>
                 <span>
                   <Image
                     src={SmallBannerImage}
                     alt="small banner image"
                     width={120}
                     height={100}
-                    className="rounded-3xl ml-5"
+                    className="rounded-3xl"
                   />
                 </span>
               </p>
-              <div className="tracking-wide flex items-center gap-2 ">
-                <div>Trip to</div>
+              <div className="tracking-wide flex items-center gap-2">
+                <div className="text-4xl">Trip to</div>
                 <div className="inner-headings text-tertiary">
                   <span>
                     Himachal <br />
@@ -92,10 +93,12 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div> vertical carousel</div>
+          <div className=" text-white hidden lg:block">
+            {/* <HeroCarousel /> */}
+          </div>
         </div>
         <footer>
-          <ul className="flex justify-between p-4">
+          <ul className="grid lg:grid-cols-4 grid-cols-2 p-4 gap-4">
             {footerList.map((item, index) => (
               <li
                 key={index}
